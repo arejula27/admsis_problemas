@@ -1,10 +1,11 @@
 #!/bin/bash
 
-if [$# -eq 0 ]
+if [ $# -eq 0 ]
 then 
 	exit 85
 fi
-tmp_file=$(mkteamp)
+
+#tmp_file=$(mktemp)
 
 for url in "$@"
 do

@@ -7,6 +7,7 @@ then
 fi
 
 files=$(find $2 -mtime +10)
+echo $files
 dat=$(date +"%y-%m-%d")
 tar -cvf  ${1}_${dat}.tar $files
 
