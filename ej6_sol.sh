@@ -22,7 +22,7 @@ do
 		usage
 	fi
  
-	find "$dir" -type f -print0 -mtime -30 -exec tar -rvf ${out_fname} {} \;
+	find "$dir" -type f -print0 -mtime -30 -exec tar -rvf ${out_fname} {} --null \;
 	# -r en tar para que se añadan todos los archivos al mismo tar
 
 	#otra opcion menos optima
